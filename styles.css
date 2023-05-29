@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.big_container_image {
+  width: 100%;
+}
+
+.big_image {
+  width: 100%;
+}
+
+.main_content {
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: hsl(234, 29%, 20%);
+}
+
+p {
+  font-size: 1.2rem;
+  color: hsl(234, 29%, 20%);
+}
+
+.icon_list {
+  display: flex;
+  gap: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+}
+
+.error {
+  font-size: 0.9rem;
+  position: absolute;
+  top: -11px;
+  right: 10px;
+  color: hsl(4, 100%, 67%);
+  font-weight: 700;
+}
+
+label {
+  font-size: 1.1rem;
+  margin-bottom: -0.5rem;
+  font-weight: 700;
+}
+
+input,
+button {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 0.5px solid hsla(235, 18%, 26%, 0.26);
+  font-size: 1.1rem;
+}
+
+button {
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.registration {
+  margin: 6rem 2rem 2rem 2rem;
+  color: hsl(234, 29%, 20%);
+  display: flex;
+  flex-direction: column;
+}
+
+.registration_h1 {
+  font-size: 3rem;
+}
+
+.registration_p {
+  font-size: 1.5rem;
+
+  text-align: center;
+}
+
+.registration_button {
+  width: 100%;
+  margin-top: 7rem;
+}
+
+.span_email {
+  font-weight: 700;
+}
+
+.hidden {
+  display: none;
+}
+
+@media only screen and (min-width: 800px) {
+  .registration {
+    align-items: center;
+  }
+
+  .registration_button {
+    width: 40%;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 5rem;
+    padding: 6rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .big_container_image {
+    height: 100%;
+    max-height: 500px;
+
+    overflow: hidden;
+    max-width: 600px;
+  }
+
+  .big_container_image img {
+    max-height: 500px;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  form {
+    margin-top: 2rem;
+  }
+
+  .hidden {
+    display: none;
+  }
+}
